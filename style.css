@@ -1,0 +1,34 @@
+ul {
+    margin-top: 100px;
+}
+
+.page-item:not(:last-child) {
+    margin-right: 6px;
+}
+
+.page-link {
+    border: 1px solid #EFF5FE;
+    border-radius: 100px;
+    background-color: #EFF5FE;
+    color: #4F545F;
+}
+
+.page-link:hover {
+    background-color: #336EC6;
+    color: #FFFFFF;
+}
+
+.pagination-sm .page-link {
+    padding: 7px 13px 7px 13px;
+}
+
+.pagination-sm .page-item:first-child .page-link {
+    border-radius: 100px;
+    padding: 7px 13px 7px 13px;
+}
+
+.pagination-sm .page-item:last-child .page-link {
+    border-radius: 100px;
+    padding: 7px 13px 7px 13px;
+    
+}
