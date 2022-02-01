@@ -9,25 +9,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="product">
-        <div id="name"></div>
-        <div id="price"></div>
-        <div id="image_url"></div>
+    <div class="container">
+        <div id="product">
+            <div id="image_url"></div>
+            <div id="btn">
+                <button>В наличии</button>
+            </div>
+            <div id="name"></div>
+            <div id="price"></div>
+        </div>
     </div>
-
  
     <ul class="pagination pagination-sm justify-content-center">
-        <li class="page-item"><a href="" class="page-link">Назад</a></li>
-        <li class="page-item"><a href="" class="page-link">1</a></li>
-        <li class="page-item"><a href="" class="page-link">2</a></li>
-        <li class="page-item"><a href="" class="page-link">3</a></li>
-        <li class="page-item"><a href="" class="page-link">4</a></li>
-        <li class="page-item"><a href="" class="page-link">5</a></li>
-        <li class="page-item"><a href="" class="page-link">6</a></li>
-        <li class="page-item"><a href="" class="page-link">7</a></li>
-        <li class="page-item"><a href="" class="page-link">8</a></li>
-        <li class="page-item"><a href="" class="page-link">9</a></li>
-        <li class="page-item"><a href="" class="page-link">Вперед</a></li>
+        <li class="page-item"><a href="javascript:paginator.previousPage()" class="page-link">Назад</a></li>
+        <li class="page-item"><a href="javascript:paginator.setPage(0)" class="page-link">1</a></li>
+        <li class="page-item"><a href="javascript:paginator.setPage(1)" class="page-link">2</a></li>
+        <li class="page-item"><a href="javascript:paginator.setPage(2)" class="page-link">3</a></li>
+        <li class="page-item"><a href="javascript:paginator.setPage(3)" class="page-link">4</a></li>
+        <li class="page-item"><a href="javascript:paginator.setPage(4)" class="page-link">5</a></li>
+        <li class="page-item"><a href="javascript:paginator.setPage(5)" class="page-link">6</a></li>
+        <li class="page-item"><a href="javascript:paginator.nextPage()" class="page-link">Вперед</a></li>
     </ul>
 
     <script src="script.js"></script>
