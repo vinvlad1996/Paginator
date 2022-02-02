@@ -1,0 +1,35 @@
+@media (max-width:1198px) {
+    .container {
+        margin-top: 80px;
+    }
+
+    .container:not(:last-child) {
+        padding-right: 20px;
+    }
+
+    ul {
+        margin-top: 100px;
+    }
+
+    .image_size {
+        max-width: 180px;
+        max-height: 180px;
+    }
+
+}
+
+@media (max-width:1198px) {
+    .container {
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .image_size {
+        max-width: 265px;
+        max-height: 265px;
+    }
+
+    ul {
+        margin-top: 80px;
+    }
+}

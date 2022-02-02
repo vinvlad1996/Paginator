@@ -16,15 +16,23 @@ class PaginationPage {
 
         prod.innerHTML = response.products.map(el => {
           return `
-        <div class="container">
-        <div class="product">
-          <img src="${el.image_url}" id="image_url" alt="${el.name}">
-          <div id="btn">
-            <button>В наличии</button>
+        <div class="container"></div>  
+        <div class="product-border-all">
+          <div class="product">
+            <img src="${el.image_url}" class="image_size" id="image_url" alt="${el.name}">
+            <div id="btn">
+              <button class="btn-top">В наличии</button>
+            </div>
+            <div id="name">${el.name}</div>
+            <div id="price">${el.price}<span> ₽</span></div>
+            <div class="product-all">
+              <div id="color">${el.color}</div>
+              <div id="short_desc">${el.short_desc}</div>
+              <div id="buy">
+                <button class="btn-down btn-image">В корзину</button>
+              </div> 
+            </div> 
           </div>
-          <div id="name">${el.name}</div>
-          <div id="price">${el.price}</div>
-        </div>  
         </div>  
         `;
         }).join('');

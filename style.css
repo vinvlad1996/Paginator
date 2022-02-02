@@ -1,15 +1,131 @@
 .container {
+    padding: 0;
     display: flex;
+    justify-content: center;
     flex-direction: row;
+    margin-top: 115px;
+}
+
+.container:not(:last-child) {
+    padding-right: 20px;
 }
 
 .product {
     border: 1px solid #E4ECF9;
     box-shadow: 0px 3px 6px #DFEAFC;
+    max-height: 400px;
+}
+
+#name,
+#price,
+#color,
+#short_desc {
+    padding-left: 20px;
+}
+
+#image_url {
+    border-bottom: 1px solid #E4ECF9;
+    padding: 20px;
+}
+
+.image_size {
+    max-width: 265px;
+    max-height: 265px;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn-top {
+    font-size: 12px;
+    line-height: 20px;
+    border: 1px solid #76CB22;
+    background-color: #76CB22;
+    color: #FFFFFF;
+    padding: 5.64px 9.04px;
+    margin-top: 18.08px;
+    margin-left: 20px;
+}
+
+#name {
+    text-decoration: underline;
+    font-size: 16px;
+    line-height: 26px;
+    color: #4F545F;
+    margin-top: 17.69px;
+}
+
+#price {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    color: #4F545F;
+    margin-top: 18px;
+}
+
+#color,
+#short_desc {
+    font-size: 12px;
+    line-height: 20px;
+    color: #6C7683;
+}
+
+#short_desc {
+    margin-top: 5px;
+}
+
+.btn-down {
+    border: 1px solid #336EC6;
+    background-color: #336EC6;
+    border-radius: 6px;
+    box-shadow: 0px 4px 8px #A9C2E9;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 16px 20.33px 15.12px 44px;
+    margin: 23.16px 0px 21.88px 20px;
+}
+
+.btn-down:hover {
+    border: 1px solid #2377f7;
+    background-color: #2377f7;
+}
+
+.product-all {
+    visibility: hidden;
+    opacity: 0;
+    max-height: 170px;
+    border: 1px solid #E4ECF9;
+    border-top: hidden;
+    box-shadow: 0px 6px 12px #DFEAFC;
+}
+
+.product:hover .product-all {
+    visibility: visible;
+    opacity: 1;
+    transition: 3s;
+}
+
+.product:hover {
+    box-shadow: 0px 6px 12px #D5E0EF;
+    box-shadow: 0px 6px 12px #DFEAFC;
+    border-bottom: hidden;
+}
+
+
+.btn-image {
+    background-image: url(IMG/Cart.svg);
+    background-repeat: no-repeat;
+    background-size: 30px 15px;
+    background-position: 14px center;
 }
 
 ul {
-    margin-top: 100px;
+    margin-top: 165px;
+    margin-bottom: 200px;
 }
 
 .page-item:not(:last-child) {
@@ -28,6 +144,11 @@ ul {
     color: #FFFFFF;
 }
 
+.page-link:focus {
+    background-color: #336EC6;
+    color: #FFFFFF;
+}
+
 .pagination-sm .page-link {
     padding: 7px 13px 7px 13px;
 }
@@ -40,5 +161,4 @@ ul {
 .pagination-sm .page-item:last-child .page-link {
     border-radius: 100px;
     padding: 7px 13px 7px 13px;
-    
 }
