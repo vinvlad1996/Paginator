@@ -18,13 +18,13 @@ class PaginationPage {
           return `
         <div class="container"></div>  
         <div class="product-border-all">
-          <div class="product">
+          <div class="product product-shadow">
             <img src="${el.image_url}" class="image_size" id="image_url" alt="${el.name}">
             <div id="btn">
               <button class="btn-top">В наличии</button>
             </div>
             <div id="name">${el.name}</div>
-            <div id="price">${el.price}<span> ₽</span></div>
+            <div id="price">${eRussia(el.price)}<span> ₽</span></div>
             <div class="product-all">
               <div id="color">${el.color}</div>
               <div id="short_desc">${el.short_desc}</div>
@@ -63,3 +63,12 @@ class PaginationPage {
 }
 
 const paginator = new PaginationPage();
+
+// function toLocaleStringLocales() {
+//   let price = 5000;
+//   let formatPrice = price.toLocaleString();
+// }
+
+function eRussia(x){
+  return x.toLocaleString('ru-RU');
+}

@@ -51,6 +51,12 @@ button {
     margin-left: 20px;
 }
 
+.btn-top:hover {
+    border: 1px solid #84f513;
+    background-color: #84f513;
+    transition: 1s;
+}
+
 #name {
     text-decoration: underline;
     font-size: 16px;
@@ -92,6 +98,7 @@ button {
 .btn-down:hover {
     border: 1px solid #2377f7;
     background-color: #2377f7;
+    transition: 1s;
 }
 
 .product-all {
