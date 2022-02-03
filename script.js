@@ -65,11 +65,6 @@ class PaginationPage {
 
 const paginator = new PaginationPage();
 
-// function toLocaleStringLocales() {
-//   let price = 5000;
-//   let formatPrice = price.toLocaleString();
-// }
-
 function eRussia(x){
   return x.toLocaleString('ru-RU');
 }
