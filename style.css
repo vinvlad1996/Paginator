@@ -1,19 +1,15 @@
 .container {
     padding: 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+    display: grid;
     margin-top: 115px;
-}
-
-.container:not(:last-child) {
-    padding-right: 20px;
+    grid-template-rows: repeat(1,445px);
+    grid-template-columns: repeat(4,305px);
+    gap: 20px;
 }
 
 .product {
     border: 1px solid #E4ECF9;
-    box-shadow: 0px 3px 6px #DFEAFC;
-    max-height: 400px;
+    box-shadow: 0 3px 6px #DFEAFC;
 }
 
 #name,
@@ -25,12 +21,12 @@
 
 #image_url {
     border-bottom: 1px solid #E4ECF9;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.image_size {
-    max-width: 265px;
-    max-height: 265px;
+.img {
+    text-align: center;
 }
 
 button {
@@ -70,7 +66,7 @@ button {
     font-size: 16px;
     line-height: 30px;
     color: #4F545F;
-    margin-top: 18px;
+    margin-top: 10px;
 }
 
 #color,
@@ -78,6 +74,10 @@ button {
     font-size: 12px;
     line-height: 20px;
     color: #6C7683;
+}
+
+#color {
+    margin-top: 10px;
 }
 
 #short_desc {
@@ -88,11 +88,11 @@ button {
     border: 1px solid #336EC6;
     background-color: #336EC6;
     border-radius: 6px;
-    box-shadow: 0px 4px 8px #A9C2E9;
+    box-shadow: 0 4px 8px #A9C2E9;
     text-transform: uppercase;
     color: #FFFFFF;
     padding: 16px 20.33px 15.12px 44px;
-    margin: 23.16px 0px 21.88px 20px;
+    margin: 23.16px 0 21.88px 20px;
 }
 
 .btn-down:hover {
@@ -104,10 +104,22 @@ button {
 .product-all {
     visibility: hidden;
     opacity: 0;
-    max-height: 170px;
-    border: 1px solid #E4ECF9;
+    max-height: 190px;
     border-top: hidden;
-    box-shadow: 0px 6px 12px #DFEAFC;
+}
+
+.product-border-all {
+    height: 630px;
+    position: relative;
+}
+
+.product {
+    top: 0;
+    height: 465px;
+}
+
+.product:hover {
+    height: 630px;
 }
 
 .product:hover .product-all {
@@ -117,8 +129,7 @@ button {
 }
 
 .product:hover {
-    box-shadow: 0px 6px 12px #D5E0EF;
-    box-shadow: 0px 6px 12px #DFEAFC;
+    box-shadow: 0 6px 12px #DFEAFC;
     border-bottom: hidden;
 }
 
@@ -131,7 +142,7 @@ button {
 }
 
 ul {
-    margin-top: 165px;
+    margin-top: 195px;
     margin-bottom: 200px;
 }
 

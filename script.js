@@ -16,10 +16,11 @@ class PaginationPage {
 
         prod.innerHTML = response.products.map(el => {
           return `
-        <div class="container"></div>  
         <div class="product-border-all">
-          <div class="product product-shadow">
+          <div class="product">
+            <div class="img">
             <img src="${el.image_url}" class="image_size" id="image_url" alt="${el.name}">
+            </div>
             <div id="btn">
               <button class="btn-top">В наличии</button>
             </div>
